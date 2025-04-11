@@ -1,0 +1,2072 @@
+@font-face {
+    font-family: 'Eastman Medium';
+    src: url(/assets/fonts/Eastman-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Eastman Black';
+    src: url(/assets/fonts/Eastman-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Eastman Regular';
+    src: url(/assets/fonts/Eastman-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: 'Eastman Regular', normal;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: #323231;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1232px;
+    margin: 0 auto;
+}
+
+.container_add_3 {
+    width: 95%;
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.container_add_4 {
+    width: 95%;
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_add {
+    width: 95%;
+    max-width: 1232px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_add_2 {
+    width: 95%;
+    max-width: 1232px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.container_footer {
+    width: 95%;
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #e9e9e7;
+    padding-bottom: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* ------------------------------------------------ */
+
+/* Header - шапка */
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #FAF8F4;
+}
+
+.header_logo {
+    padding: 7px 0;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #e9e9e7;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Eastman Regular', serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 12px;
+    text-decoration: none;
+    color: #323231B2;
+    transition: color .15s ease-in-out;
+}
+
+.nav_link:hover {
+    color: #E13B22;
+}
+
+.header_number p {
+    font-family: 'Eastman Regular', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #323231;
+    transition: color .15s ease-in-out;
+    cursor: pointer;
+}
+
+.header_number p:hover {
+    color: #E13B22;
+}
+
+.cta_button {
+    background-color: #E13B22;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+/* ------------------------------------------------ */
+
+/* Intro - приветственный экран */
+
+#intro {
+    background-color: #FAF8F4;
+    padding: 80px 0;
+    margin-bottom: 80px;
+}
+
+.intro_text {
+    margin-bottom: 40px;
+}
+
+.intro_title {
+    font-size: 42px;
+    color: #323231;
+    font-family: 'Eastman Black', serif;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.intro_header {
+    display: inline-flex;
+    align-items: center;
+    background-color: #FFE8C7;
+    color: #323231;
+    font-size: 14px;
+    border-radius: 72px;
+    padding: 4px 20px 4px 8px;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.red_lines {
+    position: relative;
+}
+
+.red_lines img {
+    position: absolute;
+    bottom: -15px;
+    left: -10px;
+}
+
+.intro_text p {
+    font-size: 18px;
+    max-width: 480px;
+}
+
+.intro_buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.red_btn {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Eastman Medium';
+    background-color: #E13B22;
+    font-size: 18px;
+    color: #FFFF;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    padding: 16px 32px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+
+.red_btn:hover {
+    background-color: #cf361f;
+}
+
+.reviews_btn {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Eastman Medium';
+    background-color: #FBF9F5;
+    font-size: 18px;
+    color: #323231;
+    border-radius: 24px;
+    border: 1px solid #E9E9E7;
+    padding: 16px 32px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    cursor: pointer;
+}
+
+.reviews_btn:hover {
+    border: 1px solid #323231;
+}
+
+.intro_ul ul {
+    padding-left: 32px;
+}
+
+.intro_ul li {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* ------------------------------------------------ */
+
+/* Advantage - блок "Почему выбирают нас?" */
+
+#advantage {
+    margin-bottom: 80px;
+}
+
+.advantage_title {
+    font-size: 36px;
+    color: #323231;
+    font-family: 'Eastman Black', serif;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.red_line {
+    position: relative;
+}
+
+.red_line img {
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+}
+
+.advantage_subtitle {
+    max-width: 470px;
+    margin-bottom: 28px;
+}
+
+.advantage_blocks_wrapper {
+    border-bottom: 1px solid #E9E9E7;
+    padding-bottom: 16px;
+}
+
+.advantage_blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+
+.advantage_item .count {
+    font-family: 'Eastman Black', serif;
+    font-size: 24px;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.advantage_item .what {
+    font-size: 14px;
+    color: #32323180;
+    margin: 0;
+}
+
+.advantage_reviews {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    gap: 45px;
+    align-items: center;
+}
+
+.reviews_wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.custom_tooltip {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.advantage_reviews_item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 16px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.advantage_reviews_item p {
+    font-family: 'Eastman Regular', serif;
+    font-weight: 600;
+    color: #323231;
+    margin: 0;
+}
+
+.advantage_reviews_item:hover {
+    background-color: #FAF9F4;
+    border-color: #32323114;
+}
+
+.tooltip_text {
+    visibility: hidden;
+    background-color: #323231;
+    color: #FFFFFF;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-family: 'Eastman Medium';
+    font-size: 14px;
+    white-space: nowrap;
+    position: absolute;
+    top: 100%;
+    margin-top: 2px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.custom_tooltip:hover .tooltip_text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.advantage_buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.buttons_phone {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wta_btn {
+    padding: 12px;
+    background-color: #FAF8F4;
+    border-radius: 24px;
+    border: transparent;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    cursor: pointer;
+}
+
+.wta_btn:hover {
+    background-color: #F2F0EC;
+}
+
+.docs_buttons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.docs_buttons p {
+    font-size: 14px;
+    color: #323231;
+}
+
+/* ------------------------------------------------ */
+
+/* Quiz - блок "Пройдите опрос и получите скидку 2000 р" */
+
+.quiz_block h3 {
+    font-size: 24px;
+    color: #323231;
+    font-family: 'Eastman Black', serif;
+    margin-bottom: 16px;
+}
+
+.stage_question {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #323231;
+}
+
+.checkbox_label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #323231;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 8px;
+}
+
+.checkbox_label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.red_checkbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #E9E9E7;
+    border-radius: 6px;
+}
+
+.checkbox_label:hover input~.red_checkbox {
+    background-color: #E9E9E7;
+}
+
+.checkbox_label input:checked~.red_checkbox {
+    background-color: #E13B22;
+    border-color: #E13B22;
+}
+
+.red_checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox_label input:checked~.red_checkbox:after {
+    display: block;
+}
+
+.checkbox_label .red_checkbox:after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 3px;
+    top: 4px;
+    background: url("/assets/images/check.svg") no-repeat center;
+}
+
+.stage_button {
+    margin-top: 24px;
+}
+
+.button_next {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Eastman Medium';
+    background-color: #E13B22;
+    font-size: 14px;
+    color: #FFFF;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    padding: 8px 18px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+
+.button_next img {
+    margin-left: 8px;
+}
+
+.button_next:hover {
+    background-color: #cf361f;
+}
+
+.button_back {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Eastman Medium';
+    background-color: #FBF9F5;
+    font-size: 14px;
+    color: #323231;
+    border-radius: 24px;
+    border: 1px solid #E9E9E7;
+    padding: 8px 18px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.button_back img {
+    margin-right: 8px;
+}
+
+.button_back:hover {
+    border: 1px solid #323231;
+}
+
+/* 1 шаг опроса */
+
+.stage_1_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stage_1_hr {
+    opacity: 1;
+    height: 4px;
+    border: 0;
+    background: linear-gradient(to right, #E13B22 11%, #E9E9E7 11%);
+    margin-bottom: 16px;
+}
+
+.stage_answers_1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 40px;
+}
+
+/* 2 шаг опроса */
+
+.stage_2_hr {
+    opacity: 1;
+    height: 4px;
+    border: 0;
+    background: linear-gradient(to right, #E13B22 30%, #E9E9E7 30%);
+    margin-bottom: 16px;
+}
+
+.stage_2_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stage_answers_2 {
+    display: grid;
+}
+
+/* 3 шаг опроса */
+
+.stage_3_hr {
+    opacity: 1;
+    height: 4px;
+    border: 0;
+    background: linear-gradient(to right, #E13B22 60%, #E9E9E7 60%);
+    margin-bottom: 16px;
+}
+
+.stage_3_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stage_answers_3 {
+    display: grid;
+}
+
+/* 4 шаг опроса */
+
+.stage_4_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stage_question_4 {
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: #323231;
+}
+
+.name_quiz,
+.number_quiz {
+    width: 75%;
+}
+
+.input_quiz label,
+.number_quiz label {
+    font-size: 16px;
+}
+
+.input_quiz label span,
+.number_quiz label span {
+    color: #323231B2
+}
+
+.name_quiz input,
+.number_quiz input {
+    font-size: 16px;
+    color: #212529;
+    padding: 6px 12px;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #D2D2CC;
+    line-height: 1.5;
+    resize: none;
+}
+
+.name_quiz {
+    margin-bottom: 20px;
+}
+
+.name_quiz input:focus,
+.number_quiz input:focus {
+    outline: none;
+}
+
+.conditions_quiz {
+    margin-top: 40px;
+}
+
+.conditions_quiz span {
+    color: #2257e1;
+    cursor: pointer;
+}
+
+/* 5 шаг опроса */
+
+.stage_5_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected_answers_list {
+    margin-top: 24px;
+}
+
+.answers_title {
+    font-family: 'Eastman Medium';
+}
+
+.answers_list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+}
+
+.answer_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.answer_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/images/check.svg');
+    background-color: #FCAFA3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+    margin-right: 14px;
+    border-radius: 6px;
+}
+
+.stage_button_last {
+    margin-top: 39px;
+}
+
+.button_repeat {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Eastman Medium';
+    background-color: #E13B22;
+    font-size: 14px;
+    color: #FFFF;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    padding: 8px 18px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+
+.button_repeat img {
+    margin-right: 8px;
+}
+
+.button_repeat:hover {
+    background-color: #cf361f;
+}
+
+/* ------------------------------------------------ */
+
+/* What_teach - блок "Чему мы учим?" */
+
+#what_teach {
+    background-color: #FAF8F4;
+    border-radius: 80px;
+    padding: 60px 80px;
+}
+
+.what_teach_info {
+    text-align: center;
+}
+
+.what_teach_info h3 {
+    font-family: 'Eastman Black', serif;
+    font-size: 36px;
+    color: #323231;
+    margin-bottom: 16px;
+}
+
+.yellow_line img {
+    position: absolute;
+}
+
+.what_teach_text {
+    font-size: 18px;
+}
+
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.subject_item {
+    display: flex;
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    align-items: center;
+}
+
+.subject_item span {
+    display: inline-block;
+    background-color: #E13B22;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0px 12px 16px 0px rgba(225, 59, 34, 0.32);
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+/* ------------------------------------------------ */
+
+/* Foreign_lang - блок "Иностранные языки" */
+
+.foreign_lang_promo {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.lang_text h3 {
+    font-family: 'Eastman Black', serif;
+    font-size: 36px;
+    color: #323231;
+    margin-bottom: 16px;
+}
+
+.lang_text p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.foreign_lang_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.foreign_lang_item {
+    display: flex;
+    background-color: #FAF8F4;
+    border-radius: 30px;
+    padding: 11px 12px;
+    font-size: 16px;
+    text-align: left;
+    align-items: center;
+}
+
+.foreign_lang_item span {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+/* ------------------------------------------------ */
+
+/* Our_courses - блок "Наши курсы" */
+
+#our_courses {
+    background-image: url(/assets/images/courses_back.svg);
+    background-repeat: repeat;
+    padding: 80px 0;
+    margin-bottom: 80px;
+}
+
+.courses_text {
+    text-align: center;
+}
+
+.courses_text h3 {
+    font-family: 'Eastman Black', serif;
+    font-size: 36px;
+    color: #323231;
+    margin-bottom: 57px;
+}
+
+.courses_programs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.courses_programs_item {
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    padding: 24px;
+}
+
+.courses_programs_item span {
+    display: inline-block;
+    border-radius: 12px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.courses_title {
+    font-family: 'Eastman Black', serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.courses_subtitle {
+    font-size: 14px;
+    margin-bottom: 0
+}
+
+.courses_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.example_program {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.example_program p {
+    font-size: 14px;
+    color: #323231;
+}
+
+/* ------------------------------------------------ */
+
+/* Stocks - блок "Акции" */
+
+.stocks_text h3 {
+    font-family: 'Eastman Black', serif;
+    font-size: 36px;
+    color: #323231;
+    margin-bottom: 24px;
+}
+
+.stocks_text {
+    text-align: center;
+}
+
+.stocks_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.stocks_item {
+    border-radius: 40px;
+    padding: 24px 40px;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
+}
+
+.stock_item_back_1 {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+.stock_item_back_2 {
+    position: absolute;
+    top: -2px;
+}
+
+.stock_item_back_3 {
+    position: absolute;
+    top: 10px;
+}
+
+.stock_item_center {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.stock_title {
+    margin-top: 24px;
+    font-family: 'Eastman Black', serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.stock_subtitle {
+    margin-top: 0;
+}
+
+.stocks_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* ------------------------------------------------ */
+/* slider - слайдер */
+
+#slider {
+    margin-bottom: 160px;
+}
+
+.gallery-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-track {
+    display: flex;
+    will-change: transform;
+    width: max-content;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.gallery-slide {
+    flex: 0 0 auto;
+    transform: translateZ(0);
+    width: 180px;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.gallery-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ------------------------------------------------ */
+
+/* Certificate - блок "Лицензия дополнительного образования" */
+
+#certificate {
+    background-color: #FAF9F4;
+    border-radius: 80px;
+    padding: 60px 80px;
+    position: relative;
+}
+
+.certificate {
+    display: flex;
+    align-items: center;
+}
+
+.right_certificate {
+    z-index: 1;
+    position: absolute;
+    top: -70%;
+    left: 40%;
+}
+
+.certificate_header h3 {
+    font-family: 'Eastman Black', serif;
+    font-size: 36px;
+    color: #323231;
+    margin-bottom: 24px;
+}
+
+.certificate_header span {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------ */
+
+/* Reviews - блок "Отзывы" */
+
+.reviews_title {
+    text-align: center;
+}
+
+.reviews_title h3 {
+    font-family: 'Eastman Black', serif;
+    font-size: 36px;
+    color: #323231;
+    margin-bottom: 24px;
+}
+
+.reviews_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.reviews_column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.reviews_item {
+    background-color: #FAF9F4;
+    padding: 24px;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.review_author {
+    font-family: 'Eastman Medium', serif;
+    font-size: 16px;
+}
+
+.review_text {
+    font-size: 14px;
+}
+
+.review_data {
+    font-size: 14px;
+    color: #323231B2;
+}
+
+/* ------------------------------------------------ */
+
+/* Cost - блок "Стоимость" */
+
+#cost {
+    border-radius: 80px;
+    padding: 60px 80px;
+    background-image: url(/assets/images/cost_back.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.cost_text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cost_text h3 {
+    font-family: 'Eastman Black', serif;
+    font-size: 36px;
+    color: #323231;
+    margin-bottom: 16px;
+}
+
+.cost_text p {
+    font-size: 18px;
+    color: #323231;
+    margin-top: 8px;
+}
+
+.cost_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.cost_item {
+    border-radius: 40px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    text-align: center;
+    position: relative;
+}
+
+.cost_title {
+    font-size: 20px;
+    font-family: 'Eastman Medium', serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.cost_subtitle {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.cost_sum {
+    font-size: 36px;
+    font-family: 'Eastman Medium', serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cost_time {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #32323180;
+}
+
+/* ------------------------------------------------ */
+
+/* Contacts - блок "Контакты" */
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contacts_info h3 {
+    font-family: 'Eastman Black', serif;
+    font-size: 36px;
+    color: #323231;
+    margin-bottom: 24px;
+}
+
+.contacts_info h4 {
+    font-family: 'Eastman Medium', serif;
+    font-size: 18px;
+    color: #323231;
+    margin-bottom: 16px;
+}
+
+.phone_numbers a,
+.addresses a {
+    display: block;
+    text-decoration: none;
+    color: #323231;
+    margin-bottom: 16px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.phone_numbers a:hover,
+.addresses a:hover {
+    color: #E13B22;
+}
+
+.phone_numbers img,
+.addresses img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.phone_numbers {
+    margin-bottom: 40px;
+}
+
+.form_intro {
+    background-color: #FFE8C7;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.form_intro h4 {
+    font-family: 'Eastman Medium', serif;
+    font-size: 18px;
+}
+
+.form_intro p {
+    font-size: 16px;
+}
+
+.form_data {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.name_data,
+.phone_data {
+    width: 100%;
+}
+
+#form_to_contact label {
+    font-size: 16px;
+}
+
+#form_to_contact label span {
+    color: #323231B2
+}
+
+#form_to_contact input,
+textarea {
+    font-size: 16px;
+    color: #212529;
+    padding: 6px 12px;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #323231;
+    line-height: 1.5;
+    resize: none;
+}
+
+#form_to_contact input,
+textarea:focus {
+    outline: none;
+}
+
+#subject_info {
+    height: 38px;
+}
+
+.form_btn {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Eastman Medium';
+    background-color: #E13B22;
+    font-size: 18px;
+    color: #FFFF;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    padding: 16px 32px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+
+.form_btn:hover {
+    background-color: #cf361f;
+}
+
+.form_condition p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.form_condition span {
+    color: #2257e1;
+    cursor: pointer;
+}
+
+/* Для обработки формы обратной связи */
+
+.form_success_message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FBF9F5;
+    border: 1px solid #323231;
+    color: #323231;
+    padding: 20px 40px;
+    border-radius: 24px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Eastman Medium', serif;
+}
+
+.form_input_error {
+    border-bottom: 2px solid #E13B22 !important;
+}
+
+.form_error_message {
+    color: #E13B22;
+    font-size: 14px;
+    margin-top: 5px;
+    height: 16px;
+}
+
+.form_btn_loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+    position: relative;
+    padding-left: 40px;
+}
+
+/* ------------------------------------------------ */
+
+/* Footer - подвал */
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_nav_link {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Eastman Regular', serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 12px;
+    text-decoration: none;
+    color: #323231B2;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.footer_nav_link:hover {
+    color: #E13B22;
+}
+
+.footer_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_number a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Eastman Regular', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #323231;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.footer_number img {
+    vertical-align: middle;
+    margin-left: 16px;
+}
+
+.footer_number a:hover {
+    color: #E13B22;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.politic {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    cursor: pointer;
+    font-size: 14px;
+    color: #323231B2;
+}
+
+.politic:hover {
+    color: #E13B22;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #323231B2;
+}
+
+/* ------------------------------------------------ */
+
+/* Медиа запросы */
+
+@media (max-width: 1121px) {
+
+    .stocks_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stock_item_center img {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .stocks_items .stock_item_center .stock_title {
+        margin-bottom: 20px;
+    }
+
+    .stocks_items {
+        padding: 20px 40px;
+    }
+
+
+
+    .stock_item_center svg {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .stocks_items .stock_item_center .stock_title {
+        margin-bottom: 16px;
+    }
+
+    .stocks_items {
+        padding: 26px 40px;
+    }
+
+    .stocks_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .advanteges__item .value {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 630px) {
+    .advantage_blocks {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 24px;
+    }
+
+    .advantage_item {
+        text-align: center;
+    }
+
+    .advantage_item .what {
+        max-width: unset;
+    }
+
+    .advantage_buttons {
+        display: block;
+    }
+
+    .advantage_buttons .docs_buttons {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .advantage_buttons .red_btn {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .advantage_item .what {
+        font-size: 18px;
+    }
+
+    .red_lines img {
+        display: none;
+    }
+}
+
+
+@media (max-width: 630px) {
+    .red_btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .wta_btn {
+        padding: 7px;
+    }
+
+    .container_add_3 {
+        margin-bottom: 40px !important;
+
+    }
+
+
+}
+
+
+
+@media (max-width: 1050px) {
+    #contacts .form_data {
+        display: block;
+    }
+
+    #contacts .form_data .phone_data {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #contacts h4 {
+        margin-top: 30px;
+    }
+
+    .form_gift {
+        font-size: 15px;
+    }
+
+    .form_subject {
+        margin-top: 30px;
+    }
+
+    #contacts .form_data {
+        display: flex;
+    }
+
+    #contacts .form_data .phone_data {
+        margin-top: 0;
+    }
+
+    #contacts .form_data input {
+        width: 100%;
+    }
+
+    .form_intro {
+        padding: 30px;
+        border-radius: 38px;
+    }
+}
+
+@media (max-width: 576px) {
+    #contacts h4 {
+        margin-top: 24px;
+    }
+
+    .form_gift {
+        font-size: 14px;
+    }
+
+    .form_subject {
+        margin-top: 20px;
+    }
+
+    .form_intro {
+        padding: 24px;
+        border-radius: 32px;
+    }
+
+}
+
+@media (max-width: 528px) {
+    #contacts .form_data {
+        display: block;
+    }
+
+    #contacts .form_data .phone_data {
+        margin-top: 20px;
+    }
+
+    .form_intro::after {
+        right: 0;
+    }
+}
+
+
+@media (max-width: 972px) {
+    .cost_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cost_items {
+        gap: 14px;
+    }
+
+    .cost_items {
+        margin-top: 30px;
+    }
+
+    .cost_title {
+        font-size: 18px;
+    }
+
+    .cost_subtitle,
+    .cost_time {
+        font-size: 15px;
+    }
+
+    .cost_sum {
+        font-size: 30px;
+    }
+
+    #courses_price {
+        padding: 40px;
+        border-radius: 40px;
+    }
+
+    #courses_price p span img {
+        width: 175px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .cost_items {
+        gap: 12px;
+    }
+
+    .cost_items {
+        margin-top: 24px;
+    }
+
+    .cost_title {
+        font-size: 16px;
+    }
+
+    .cost_subtitle,
+    .cost_time {
+        font-size: 14px;
+    }
+
+    .cost_sum {
+        font-size: 24px;
+    }
+
+    .cost_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #courses_price {
+        padding: 24px 16px;
+        border-radius: 32px;
+    }
+
+    #courses_price p span img {
+        width: 170px;
+        left: -10px;
+    }
+}
+
+@media (max-width: 340px) {
+    #courses_price p span img {
+        top: -15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .lang_text {
+        text-align: center;
+    }
+
+    .foreign_lang_item {
+        font-size: 15px;
+    }
+
+    #foreign_lang .buttons_phone {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .foreign_lang_item {
+        font-size: 14px;
+    }
+
+    #foreign_lang .buttons_phone {
+        margin-top: 24px;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+    .right_certificate img {
+        right: -100px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .right_certificate img {
+        width: 400px;
+        height: 400px;
+        top: -100px;
+        right: -50px;
+    }
+
+    #certificate {
+        padding: 60px;
+    }
+}
+
+@media (max-width: 970px) {
+    .right_certificate img {
+        right: unset;
+        top: -100px;
+    }
+
+    #certificate {
+        padding: 60px;
+        padding-top: 250px;
+        border-radius: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #certificate {
+        padding: 24px;
+        padding-top: 250px;
+        border-radius: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    .right_certificate img {
+        width: 300px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #slider {
+        margin-bottom: 100px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #slider {
+        margin-bottom: 80px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .courses_programs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    #our_courses {
+        padding: 40px;
+        margin-bottom: 60px;
+    }
+
+    .courses_programs,
+    .courses_buttons {
+        margin-top: 30px;
+    }
+
+    .courses_programs_item .courses_title {
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 14px;
+    }
+
+    .courses_programs {
+        gap: 12px;
+    }
+
+    .courses_programs_item {
+        border-radius: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #our_courses {
+        padding: 16px;
+        margin-bottom: 40px;
+    }
+
+    .courses_programs,
+    .courses_buttons {
+        margin-top: 24px;
+    }
+
+    .courses_programs_item .courses_title {
+        font-family: 'Eastman Regular', serif;
+        font-size: 14px;
+        margin-top: 14px;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+
+    .courses_programs_item .courses_subtitle {
+        display: none;
+    }
+
+    .courses_programs_item {
+        padding: 12px;
+        border-radius: 24px;
+    }
+
+    .course_back_col {
+        margin: 0 auto;
+    }
+
+    .courses_programs_item .courses_title {
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 1016px) {
+    .intro_img {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .intro_header {
+        font-size: 13px;
+    }
+
+    .intro_subtitle {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+
+    .intro_buttons {
+        gap: 12px;
+    }
+
+    #intro {
+        padding: 60px 0;
+        padding-top: 130px;
+        margin-bottom: 60px;
+    }
+
+    .red_lines img {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .intro_header {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .intro_subtitle {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    #intro {
+        padding-top: 87px;
+        padding-bottom: 18px;
+        margin-bottom: 40px;
+    }
+
+    .red_lines svg {
+        bottom: -10px;
+    }
+
+    #intro .container_add {
+        margin-bottom: 0 !important;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .intro_buttons button {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 1016px) {
+    #quiz_section .stage_photo {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .stage_answers_1 {
+        gap: 0 20px;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .stage_4 .input_quiz,
+    .stage_4 .conditions_quiz {
+        height: 215px;
+    }
+}
+
+@media (max-width: 768px) {
+    #quiz_section h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    #quiz_section h3 {
+        font-size: 18px;
+    }
+
+    .stage_answers_1 {
+        grid-template-columns: repeat(2, 1fr);
+        height: 234px;
+    }
+}
+
+@media (max-width: 500px) {
+    .stage_answers_1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .subjects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 1030px) {
+    .subject_item {
+        padding: 16px;
+    }
+
+}
+
+@media (max-width: 970px) {
+    .subjects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .wta_btn {
+        padding: 10px;
+    }
+
+    .container_add_3 {
+        margin-bottom: 60px;
+    }
+
+    .what_teach_text {
+        font-size: 16px;
+    }
+
+    #what_teach {
+        padding: 30px 40px;
+        border-radius: 32px;
+    }
+
+
+}
+
+@media (max-width: 700px) {
+    .subject_item span {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .subject_item {
+        text-align: center;
+        max-width: 142px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .yellow_line {
+        display: none;
+    }
+
+    #what_teach {
+        padding: 24px 16px;
+    }
+
+}
